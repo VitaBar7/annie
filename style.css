@@ -1,0 +1,219 @@
+/*reset navigator values and set main values*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    }
+body {
+    background: #F1F3F4;
+}
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;     
+}
+li {
+    padding-top: -20;
+    margin-left: 20px;
+}
+button {
+    background-color: white;
+    max-height: 46px;
+    width: 150;
+    padding: 1px 5px 1px 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px; 
+    border-style: none;
+    cursor: pointer;
+}
+.navbar button:hover {
+    border-style: outset;
+}
+.navbar li button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+button#darkmode {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#darkmode:hover {
+    border-style: outset;
+}
+
+#user img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 25px; 
+    margin:3px;
+}
+
+button span {
+    font-size: small;
+    margin:3px;  
+}
+
+.header {
+    width: 95%;
+    height: 170px;
+    margin:auto;
+    border-radius: 5px;
+    text-align: right;
+}
+.header img {
+    width: 100%;
+    max-height: 90%;
+    border-radius: 5px;
+}
+
+.welcome {
+    padding-top: 90px;
+    padding-right: 30px;  
+    position: absolute;
+    top: 80px; right: 90px;
+}
+.welcome span {
+    color: white;
+}
+em {
+    color: white;
+    font-size: 18px;
+}
+
+.container {
+    padding-top: 25px;
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 32px;
+    color: white;
+}
+p {
+    font-size:16px;
+}
+span.bold {
+    font-weight: 600;
+}
+.categories {
+    width: 50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cat img {
+    max-height: 95%;
+    border-radius: 5px;
+}
+.cat h3 {
+    position:relative;
+    text-align: right;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    bottom: 30px; right: 5px
+}
+.content-row {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.rightside {
+    max-width: 45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+   
+.completed ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.completed ul li button {
+    background: #F1F3F4;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 5px;
+}
+.completed ul li button:hover {
+    
+    background-color: rgb(248, 246, 246);
+    font-style: italic;
+    font-weight: 400;
+    border-color: black;
+}
+
+#plus {
+    border-radius: 50%;
+    border-color: rgb(156, 146, 146);
+    border-style: dashed;
+    border-width: 1px;
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+footer p {
+    padding-top: 5px;
+    text-align: center;
+    font-size: small;
+}
+
+
+
+@media screen and (max-width: 600px) {
+   
+    h1 {
+        font-size: 32px;
+        color: white;
+    }
+    .welcome {
+        top: 50px;
+        right: 10px;
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
